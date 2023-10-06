@@ -732,7 +732,7 @@ img {
   border-color: #4d5ae5;
 }
 
-.modal-check:checked + .check-text-box {
+.modal-check:checked + .check-text > .check-text-box {
   border: none;
   fill: #f4f4fd;
   background-color: #404bbf;
