@@ -482,6 +482,7 @@ img {
 }
 .footer-soc-box {
   align-items: center;
+  margin-right: 120px;
 }
 
 .footer-soc-text {
@@ -525,6 +526,59 @@ img {
 
 .footer-icon {
   fill: #f4f4fd;
+}
+
+.subscribe-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
+}
+
+.subscribe-btn {
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-icon {
+  margin-left: 16px;
+  fill: #ffffff;
 }
 
 /** =============================== */
@@ -580,6 +634,11 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-btn:hover, .modal-btn:focus {
+  background-color: #404bbf;
+}
+
 .modal-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -595,7 +654,7 @@ img {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-label {
@@ -606,6 +665,7 @@ img {
   letter-spacing: 0.04em;
   margin-bottom: 4px;
 }
+
 
 .input-wrap {
   position: relative;
@@ -661,9 +721,10 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-check:checked + .check+text > .check-text-box {
+.modal-check:checked + .check + text > .check-text-box {
   border: none;
   fill: #ffffff;
+  background-color: #404bbf;
 }
 
 .check-text {
@@ -688,12 +749,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  fill: transparent;
   margin-right: 8px;
 }
 
 .check-text-icon {
-  fill: transparent;
 }
 
 .modal-form-btn {
@@ -715,4 +775,8 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.modal-form-btn:hover, .modal-form-btn:focus {
+  background-color: #404bbf;
 }
